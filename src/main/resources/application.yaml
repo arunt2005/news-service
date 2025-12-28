@@ -1,3 +1,8 @@
 spring:
   application:
     name: news-service
+
+news:
+  api:
+    url: https://newsapi.org/v2/top-headlines
+    key: f07a766e31884bdb9a39671557293ca0

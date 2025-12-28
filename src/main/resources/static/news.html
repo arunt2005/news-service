@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>World News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📰 World News</h1>
+
+    <div class="controls">
+        <select id="country">
+            <option value="in">India</option>
+            <option value="us">USA</option>
+            <option value="gb">UK</option>
+            <option value="au">Australia</option>
+            <option value="ca">Canada</option>
+        </select>
+
+        <button onclick="loadNews()">Get News</button>
+    </div>
+
+    <div id="newsList"></div>
+</div>
+
+<script src="news.js"></script>
+</body>
+</html>
