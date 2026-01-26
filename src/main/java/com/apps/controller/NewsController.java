@@ -1,5 +1,6 @@
-package com.apps;
+package com.apps.controller;
 
+import com.apps.service.NewsService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -20,7 +21,7 @@ public class NewsController {
     }
 
     @GetMapping
-    public ResponseEntity<?> getNews(@RequestParam("country") String country) {
+    public ResponseEntity<String> getNews(@RequestParam("country") String country) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         return new ResponseEntity<>(service.getTopNews(country), headers, HttpStatus.FOUND);
